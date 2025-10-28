@@ -47,3 +47,13 @@ ram1 = RAM(16)
 
 my_pc = Computer(cpu1, gpu1, ram1)
 my_pc.system_specs()
+"""
+| Concept           | Where It Appears                            | Meaning                                 |
+| ----------------- | ------------------------------------------- | --------------------------------------- |
+| **Class**         | `CPU`, `GPU`, `RAM`, `Computer`             | Blueprint for an object                 |
+| **Object**        | `cpu1`, `gpu1`, `ram1`, `my_pc`             | Instance of a class                     |
+| **Encapsulation** | Attributes like `self.brand` or `self.size` | Data stored inside objects              |
+| **Composition**   | `Computer` has `CPU`, `GPU`, `RAM`          | Class contains other class objects      |
+| **Delegation**    | `Computer` calls `self.cpu.specs()`         | One class using another’s functionality |
+| **Reusability**   | Components can be reused in other systems   | Promotes modular design                 |
+"""
